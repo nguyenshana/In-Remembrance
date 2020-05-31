@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>In Remembrance</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body onload="headBob()">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path -->
+      <div class="title">
+      	<h1 class="text" id="name">In Remembrance</h1>
+	  </div>
+      
+      <div class="person-popup" onclick="clickperson()">
+        <span class="text" id="person-popup">
+          <h1 class="name"><strong>John Doe</strong></h1>
+          <h3 class="name">2020-2020</h3>
+        </span>
+        
+        <div class="person-frame">
+          <div class="pic-frame">
+            <div class="frame-stand"></div>
+            <div class="frame-outer"></div>
+            <div class="frame-shadow"></div>
+            <div class="frame-inner"></div>
+          </div>
+
+          <div class="person" onclick="changeSkin()">
+            <div class="arm-left" id="leftarm"></div>
+            <div class="arm-right" id="rightarm"></div>
+            <div class="body" id="body"></div>
+            <div id="head">
+              <div class="eye1"></div>
+              <div class="eye2"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+        </div>
+       </div>
+      
+      <div class="persondesc-popup" onclick="clickflower1()">
+        <span class="text" id="persondesc-popup">
+          <h2 class="name">The purpose of this website would be to keep this person close to people's hearts, 
+            not to prolong the sufferring, but to help accept the present and trust that he or she has gone 
+            to a better, happier place.</h2>
+        </span>
+        <div class="flower">
+          <div class="leaf"></div>
+          <div class="stem"></div>
+          <!-- first petal-->
+          <div class="petal1" id="petal1"></div>
+          <!-- fourth petal-->
+          <div class="petal2" id="petal2"></div>
+          <!-- third petal-->
+          <div class="petal3" id="petal3"></div>
+          <!-- second petal-->
+          <div class="petal4" id="petal4"></div> 
+        </div>
+      </div>
+      
+      <div class="persondesc-popup" onclick="clickflower2()">
+        <span class="text" id="persondesc2-popup">
+          <h2 class="name">A flower would hold a message that someone wrote about this person. 
+            It can be one of their fond memories of the person that has passed or anything nice that they 
+            want to share.</h2>
+        </span>
+        <div class="flower2">
+          <div class="leaf2"></div>
+          <div class="leaf22"></div>
+          <div class="stem2"></div>
+          <!-- first petal-->
+          <div class="petal21" id="petal21"></div>
+          <!-- fourth petal-->
+          <div class="petal22" id="petal22"></div>
+          <!-- third petal-->
+          <div class="petal23" id="petal23"></div>
+          <!-- second petal-->
+          <div class="petal24" id="petal24"></div> 
+        </div>
+      </div>
+      
+	  <div class="text" id="help">
+        <h3>Need assistance on how to interact with this website?</h3>
+      </div>
+
+      <a href="" onclick="moveArrow()"><div class="arrow" id="arrow"></div></a>
+
+      <div class="text" id="instructions">
+        <p>Doing multiple clicks on the person will toggle their skin color and change whether the name appears.</p>
+        <p>Clicking on the picture frame will change whether the name appears.</p>
+        <p>Selecting the flower will show messages.</p>
+      </div>
+      
+      
+	</body>
+</html>
